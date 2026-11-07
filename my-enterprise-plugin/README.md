@@ -12,7 +12,7 @@ A local-first Codex plugin package with reusable developer workflows, a read-onl
 - **Tests and fixtures:** `tests/` covers MCP and utility behavior; `regression/` contains deterministic policy cases and a scorer. `chaos/` provides test-only deterministic fault simulations.
 - **Additional contracts:** `auth/`, `telemetry/`, `sync/`, `memory/`, `state/`, `cache/`, `certificates/`, `locales/`, and `ui/` contain code, schema examples, or templates. Codex does not automatically activate arbitrary folders.
 
-For a folder-by-folder assignment to **enterprise**, **personal**, and **code repository** levels, see [OWNERSHIP_AND_DEPLOYMENT_LEVELS.md](documentation/OWNERSHIP_AND_DEPLOYMENT_LEVELS.md). The core architecture and security boundaries are in [ARCHITECTURE.md](documentation/ARCHITECTURE.md), with additional [research notes](documentation/RESEARCH.md) and [troubleshooting](documentation/TROUBLESHOOTING.md).
+For a folder-by-folder assignment to **enterprise**, **personal**, and **code repository** levels, see [OWNERSHIP_AND_DEPLOYMENT_LEVELS.md](documentation/OWNERSHIP_AND_DEPLOYMENT_LEVELS.md) and the concise [structure level mapping](documentation/STRUCTURE_LEVEL_MAPPING.md). The core architecture and security boundaries are in [ARCHITECTURE.md](documentation/ARCHITECTURE.md), with additional [research notes](documentation/RESEARCH.md) and [troubleshooting](documentation/TROUBLESHOOTING.md).
 
 ## Package layout
 
