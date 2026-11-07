@@ -1,0 +1,9 @@
+{
+  "plugin_name": "Dev Policy Guardrails",
+  "description": "Check local developer actions",
+  "messages": {
+    "command_denied": "This command matched a configured local safety rule.",
+    "audit_unconfigured": "Audit signing is not configured; this event was not recorded.",
+    "residency_mismatch": "Declared processing region is outside the configured boundary."
+  }
+}

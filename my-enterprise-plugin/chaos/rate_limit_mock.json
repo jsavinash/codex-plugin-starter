@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "scope": "tests-only",
+  "status": 429,
+  "retry_after_seconds": 1,
+  "max_attempts": 3,
+  "jitter": false,
+  "safety": "This fixture does not issue provider calls or consume tokens."
+}

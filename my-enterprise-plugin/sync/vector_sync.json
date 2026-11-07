@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "mode": "plan-only",
+  "source_directory": "./cache/schema_snapshots",
+  "remote_target_env": "ENTERPRISE_VECTOR_SYNC_ENDPOINT",
+  "require_tls": true,
+  "require_approval_for_upload": true,
+  "max_batch_items": 250,
+  "hash_algorithm": "sha256",
+  "notes": "No network sync implementation is bundled. A trusted service adapter must enforce identity, tenancy, residency, deletion, and authorization."
+}

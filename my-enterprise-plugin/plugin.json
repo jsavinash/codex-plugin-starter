@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "my-enterprise-plugin",
+  "version": "0.1.0",
+  "description": "Enterprise developer safeguards, audit helpers, and policy checks for local Codex workflows.",
+  "author": { "name": "Enterprise Plugin Maintainers" },
+  "keywords": ["enterprise", "developer-tools", "policy", "audit"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "hooks": "./hooks.json",
+      "onboardingSkill": "./skills/preflight/SKILL.md",
+      "interface": {
+        "displayName": "Dev Policy Guardrails",
+        "shortDescription": "Check local developer actions",
+        "longDescription": "Provides local policy checks for shell commands, data redaction, residency declarations, budget estimates, and audit records. It does not provide centralized identity, model routing, regulatory certification, or complete runtime mediation without enterprise host services.",
+        "developerName": "Enterprise Plugin Maintainers",
+        "category": "Developer Tools",
+        "capabilities": ["Check local commands", "Redact sensitive text", "Review declared policies", "Record signed local events"]
+      }
+    }
+  }
+}

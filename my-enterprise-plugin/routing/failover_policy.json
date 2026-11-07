@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "mode": "recommendation-only",
+  "routes": [
+    { "id": "primary", "provider": "openai", "model_env": "ENTERPRISE_PRIMARY_MODEL", "region": "EU", "priority": 1 },
+    { "id": "fallback", "provider": "approved-secondary", "model_env": "ENTERPRISE_FALLBACK_MODEL", "region": "EU", "priority": 2 }
+  ],
+  "fallback_on": ["timeout", "rate_limit", "service_unavailable"],
+  "max_attempts": 2,
+  "require_same_region": true,
+  "note": "The Codex plugin host controls model selection. This file is consumed only by the included route recommendation utility; no model requests are routed here."
+}

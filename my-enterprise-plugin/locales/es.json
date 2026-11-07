@@ -1,0 +1,9 @@
+{
+  "plugin_name": "Protecciones de desarrollo",
+  "description": "Comprueba acciones locales de desarrollo",
+  "messages": {
+    "command_denied": "Este comando coincide con una regla de seguridad local configurada.",
+    "audit_unconfigured": "La firma de auditoría no está configurada; este evento no se registró.",
+    "residency_mismatch": "La región de procesamiento declarada está fuera del límite configurado."
+  }
+}

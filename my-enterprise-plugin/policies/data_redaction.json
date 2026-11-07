@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "rules": [
+    { "id": "PRIVATE_KEY", "pattern": "-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----[\\s\\S]*?-----END (?:RSA |EC |OPENSSH )?PRIVATE KEY-----", "flags": "g" },
+    { "id": "BEARER_TOKEN", "pattern": "\\bBearer\\s+[A-Za-z0-9._~+/-]+=*", "flags": "gi" },
+    { "id": "EMAIL", "pattern": "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b", "flags": "gi" },
+    { "id": "US_SSN", "pattern": "\\b(?!000|666|9\\d\\d)\\d{3}-(?!00)\\d{2}-(?!0000)\\d{4}\\b", "flags": "g" },
+    { "id": "AWS_ACCESS_KEY", "pattern": "\\bAKIA[0-9A-Z]{16}\\b", "flags": "g" },
+    { "id": "OPENAI_STYLE_KEY", "pattern": "\\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\\b", "flags": "g" }
+  ],
+  "replacement_template": "[REDACTED:{id}]",
+  "warning": "Regex redaction is heuristic and can miss variants. Use a vetted DLP control at the data boundary for actual compliance enforcement."
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "empty-template",
+  "session_id": null,
+  "stage": null,
+  "updated_at": null,
+  "note": "Do not store transcripts, secrets, or live session state in the plugin package. Use Codex session recovery or an approved host-side state service."
+}

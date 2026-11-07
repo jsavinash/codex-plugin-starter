@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Release preflight request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["artifactSha256", "environment", "changeWindowApproved"],
+  "properties": {
+    "artifactSha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+    "environment": { "type": "string", "enum": ["development", "staging", "production"] },
+    "changeWindowApproved": { "type": "boolean" },
+    "changeTicket": { "type": "string", "maxLength": 120 }
+  }
+}

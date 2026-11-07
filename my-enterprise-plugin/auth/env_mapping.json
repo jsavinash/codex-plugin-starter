@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "variables": [
+    { "name": "ENTERPRISE_AUDIT_HMAC_KEY", "scope": "local-hook/audit-signing", "required_for": "signed local PostToolUse audit records", "sensitive": true, "expose_to_model": false },
+    { "name": "ENTERPRISE_AUDIT_KEY_ID", "scope": "local-hook/audit-signing", "required_for": "optional non-secret key identifier", "sensitive": false, "expose_to_model": false }
+  ],
+  "rule": "Only pass secret values to the component that needs them. This manifest lists names and scopes, never values."
+}

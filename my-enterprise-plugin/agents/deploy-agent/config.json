@@ -1,0 +1,7 @@
+{
+  "name": "enterprise-release-preflight",
+  "mode": "read-only-preflight",
+  "writes_enabled": false,
+  "external_actions_enabled": false,
+  "note": "This role checks release inputs only. A deployment system, credentials, and an explicit authorization workflow are not included."
+}

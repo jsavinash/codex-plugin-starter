@@ -1,0 +1,15 @@
+.env*
+*.pem
+*.key
+*.sig
+certificates/internal_ca.crt
+cache/*.db
+memory/*.bin
+state/*.runtime.json
+state/handoffs/*
+telemetry/*.jsonl
+sync/*.feed
+dist/*.zip
+dist/*.tar
+node_modules/
+__pycache__/

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "frameworks": {
+    "HIPAA": { "enabled": false, "required_controls": ["approved_processor", "minimum_necessary", "audit_retention_policy"] },
+    "SOC2": { "enabled": false, "required_controls": ["access_review", "change_management", "incident_response"] },
+    "GDPR": { "enabled": false, "required_controls": ["lawful_basis", "data_minimization", "retention_policy", "data_subject_process"] }
+  },
+  "disclaimer": "These are control mapping labels, not a compliance determination or certification. Enable only after review by qualified privacy and security owners."
+}

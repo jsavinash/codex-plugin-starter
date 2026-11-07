@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "cost_centers": {
+    "engineering": { "display_name": "Engineering", "billing_code": "ENG-DEV" },
+    "platform": { "display_name": "Platform", "billing_code": "PLT-DEV" }
+  },
+  "notes": "Example internal labels only. This plugin does not collect provider usage or post accounting entries."
+}

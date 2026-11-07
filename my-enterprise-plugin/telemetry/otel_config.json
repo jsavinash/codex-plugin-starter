@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "protocol": "otlp-http",
+  "endpoint_env": "OTEL_EXPORTER_OTLP_ENDPOINT",
+  "headers_env": "OTEL_EXPORTER_OTLP_HEADERS",
+  "include_tool_arguments": false,
+  "include_tool_results": false,
+  "attributes_allowlist": ["plugin.name", "plugin.version", "hook.event", "tool.name", "outcome"],
+  "note": "No exporter is bundled. Configure an organization-managed collector and validate retention, residency, and secret handling before connecting a remote sink."
+}

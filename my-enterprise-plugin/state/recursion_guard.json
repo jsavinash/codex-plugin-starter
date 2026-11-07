@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "max_handoff_depth": 8,
+  "max_repeated_handoff_signature": 2,
+  "action": "stop-and-report",
+  "enforcement": "workflow-helper-only",
+  "note": "The values are inputs for application-owned orchestration; plugin skills do not control Codex's internal orchestration loop."
+}

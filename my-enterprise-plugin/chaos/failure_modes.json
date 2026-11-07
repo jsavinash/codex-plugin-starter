@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "scope": "tests-only",
+  "scenarios": [
+    { "id": "transient-timeout", "kind": "timeout", "probability": 0.1, "max_delay_ms": 500 },
+    { "id": "temporary-unavailable", "kind": "http_status", "status": 503, "probability": 0.05 },
+    { "id": "malformed-response", "kind": "invalid_json", "probability": 0.02 }
+  ],
+  "safety": "Never enable against production endpoints or real user data. The included simulator only returns deterministic test decisions."
+}

@@ -1,0 +1,37 @@
+{
+  "description": "Local, user-trusted defense-in-depth hooks. These observe only supported Codex tool paths.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/hooks/command_policy.js\"",
+            "timeout": 5,
+            "statusMessage": "Checking enterprise command policy"
+          },
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/telemetry/audit_logger.js\"",
+            "timeout": 5,
+            "statusMessage": "Signing proposed local tool event"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${PLUGIN_ROOT}/telemetry/audit_logger.js\"",
+            "timeout": 5,
+            "statusMessage": "Recording redacted local tool event"
+          }
+        ]
+      }
+    ]
+  }
+}

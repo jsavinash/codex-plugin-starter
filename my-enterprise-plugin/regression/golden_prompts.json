@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "cases": [
+    { "id": "redact-email", "input": "Contact dev@example.test", "expected_contains": "[REDACTED:EMAIL]" },
+    { "id": "deny-delete-root", "input": "rm -rf /", "expected_contains": "denied" },
+    { "id": "allow-read-only", "input": "git status --short", "expected_contains": "allowed" },
+    { "id": "residency-mismatch", "input": "EU:US", "expected_contains": "outside the configured boundary" }
+  ],
+  "evaluation_mode": "deterministic-policy-fixtures",
+  "note": "These checks evaluate local helper behavior, not model quality or prompt alignment."
+}

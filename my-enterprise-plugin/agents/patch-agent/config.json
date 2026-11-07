@@ -1,0 +1,7 @@
+{
+  "name": "enterprise-patch-agent",
+  "mode": "advisory-local-workflow",
+  "tools": ["redact_text", "check_command", "check_data_residency", "check_budget_estimate", "recommend_route", "check_sha256_feed"],
+  "max_handoff_depth": 8,
+  "note": "This is workflow metadata for the bundled MCP server and skills, not a separately launched Codex subagent profile."
+}

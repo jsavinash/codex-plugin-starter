@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "mode": "local-estimate-only",
+  "requests_per_minute": 30,
+  "max_input_tokens": 32000,
+  "max_output_tokens": 8000,
+  "per_task_budget_usd": 5.0,
+  "model_aliases": {},
+  "note": "A plugin cannot observe or throttle all Codex inference. Enforce actual token limits in the gateway or managed host."
+}

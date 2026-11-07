@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "max_command_chars": 12000,
+  "rules": [
+    { "id": "recursive-root-delete", "pattern": "(?:^|[;&|\\s])rm\\s+(?:-[a-zA-Z]*r[a-zA-Z]*f[a-zA-Z]*|-[a-zA-Z]*f[a-zA-Z]*r[a-zA-Z]*)\\s+/(?:\\s|$)", "flags": "i", "description": "recursive forced deletion from filesystem root" },
+    { "id": "filesystem-format", "pattern": "(?:^|[;&|\\s])mkfs(?:\\.[a-z0-9]+)?\\b", "flags": "i", "description": "filesystem formatting utility" },
+    { "id": "raw-disk-write", "pattern": "(?:^|[;&|\\s])dd\\b[^;&|]*\\bof=/dev/", "flags": "i", "description": "raw block device write" },
+    { "id": "force-push", "pattern": "\\bgit\\s+push\\b[^;&|]*\\s--force(?:-with-lease)?\\b", "flags": "i", "description": "force push can rewrite shared history" },
+    { "id": "terraform-destroy", "pattern": "\\bterraform\\s+destroy\\b", "flags": "i", "description": "infrastructure destroy command" }
+  ],
+  "warning": "This regex hook is a defense-in-depth signal, not a complete shell parser or substitute for Codex sandboxing and managed command policy."
+}

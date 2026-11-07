@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "empty-template",
+  "parent_session_id": null,
+  "children": [],
+  "retention_days": 0,
+  "note": "Codex owns conversation and subagent lifecycle state. This file is a schema example and is not populated from transcripts."
+}

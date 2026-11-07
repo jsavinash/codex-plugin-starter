@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "default": "deny",
+  "regions": {
+    "EU": { "allowed_processing_regions": ["EU"], "policy_id": "eu-data-boundary" },
+    "US": { "allowed_processing_regions": ["US"], "policy_id": "us-data-boundary" }
+  },
+  "notes": [
+    "This policy checks declared regions only. The plugin cannot determine or enforce the actual location of an upstream model or service.",
+    "Replace these sample rules with organization-approved residency policy before use."
+  ]
+}
